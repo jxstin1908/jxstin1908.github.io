@@ -22,6 +22,38 @@
 
   <main class="container">
     <section>
+  <h2>Serversteuerung</h2>
+  
+  <div>
+    <label>Willkommens-Channel ID:</label>
+    <input type="text" id="welcome-channel">
+    <label>Text:</label>
+    <input type="text" id="welcome-text">
+    <button onclick="setWelcome(
+      document.getElementById('welcome-channel').value,
+      document.getElementById('welcome-text').value
+    )">Set Welcome</button>
+  </div>
+
+  <div>
+    <label>Autorole ID:</label>
+    <input type="text" id="autorole-id">
+    <button onclick="setAutorole(document.getElementById('autorole-id').value)">Set Autorole</button>
+  </div>
+
+  <div>
+    <label>Ticket Channel ID:</label>
+    <input type="text" id="ticket-channel">
+    <button onclick="createTicketPanel(document.getElementById('ticket-channel').value)">Create Ticket Panel</button>
+  </div>
+
+  <div>
+    <label>Voice Channel ID:</label>
+    <input type="text" id="voice-channel">
+    <button onclick="createVoicePanel(document.getElementById('voice-channel').value)">Create Voice Panel</button>
+  </div>
+</section>
+<section>
       <h2>Was OctavianBot kann</h2>
       <ul>
         <li>Voice Control Panels (Name, Limit, Lock/Unlock, Claim, Invite, Transfer)</li>
