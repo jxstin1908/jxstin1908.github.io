@@ -18,3 +18,10 @@ h2{color:var(--accent)}
 ul{line-height:1.7}
 footer{margin-top:24px;color:rgba(230,238,243,0.6);font-size:14px}
 code{background:rgba(255,255,255,0.03);padding:2px 6px;border-radius:6px}
+/* Das Logo auf eine schöne Größe bringen */
+.logo {
+  width: 150px;       /* Ändere die Zahl, falls es größer/kleiner sein soll */
+  height: auto;        /* Verhindert, dass das Bild verzerrt wird */
+  display: block;      /* Hilft beim Zentrieren */
+  margin: 0 auto 20px; /* Zentriert das Logo und gibt Abstand nach unten */
+}
