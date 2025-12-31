@@ -3,76 +3,89 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>OctavianBot — Voice & Panel Manager</title>
+  <title>OctavianBot — Moderation & Voice Control</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/png" href="Octavian_Logo_Rand.png">
 </head>
-<script src="app.js"></script>
+
 <body>
   <header class="hero">
     <div class="container">
       <img src="Octavian_Logo_Rand.png" alt="OctavianBot Logo" class="logo">
       <h1>OctavianBot</h1>
-      <p class="tagline">Kanalverwaltung & Voice‑Control für deine Community</p>
-      <p class="cta">
-        <a class="btn" href="https://github.com/jxstin1908">GitHub</a>
-        <a class="btn primary" href="/guilds">Dashboard (Demonstration)</a>
+      <p class="tagline">
+        Kanalverwaltung, Moderation & Voice-Control für deine Community
       </p>
+
+      <div class="cta">
+        <a class="btn primary"
+           href="https://discord.com/oauth2/authorize?CLIENT_ID_HIER&permissions=8&scope=bot%20applications.commands">
+          🤖 Bot einladen
+        </a>
+        <a class="btn" href="https://github.com/jxstin1908">
+          GitHub
+        </a>
+      </div>
     </div>
   </header>
 
   <main class="container">
+
     <section>
-  <h2>Serversteuerung</h2>
-  
-  <div>
-    <label>Willkommens-Channel ID:</label>
-    <input type="text" id="welcome-channel">
-    <label>Text:</label>
-    <input type="text" id="welcome-text">
-    <button onclick="setWelcome(
-      document.getElementById('welcome-channel').value,
-      document.getElementById('welcome-text').value
-    )">Set Welcome</button>
-  </div>
-
-  <div>
-    <label>Autorole ID:</label>
-    <input type="text" id="autorole-id">
-    <button onclick="setAutorole(document.getElementById('autorole-id').value)">Set Autorole</button>
-  </div>
-
-  <div>
-    <label>Ticket Channel ID:</label>
-    <input type="text" id="ticket-channel">
-    <button onclick="createTicketPanel(document.getElementById('ticket-channel').value)">Create Ticket Panel</button>
-  </div>
-
-  <div>
-    <label>Voice Channel ID:</label>
-    <input type="text" id="voice-channel">
-    <button onclick="createVoicePanel(document.getElementById('voice-channel').value)">Create Voice Panel</button>
-  </div>
-</section>
-<section>
-      <h2>Was OctavianBot kann</h2>
+      <h2>🚀 Was OctavianBot kann</h2>
       <ul>
-        <li>Voice Control Panels (Name, Limit, Lock/Unlock, Claim, Invite, Transfer)</li>
-        <li>Ticketsystem mit Panel</li>
-        <li>Giveaways, Automod & Leveling</li>
-        <li>Ein Dashboard zum Konfigurieren (OAuth2)</li>
+        <li>🛡️ Moderation (Kick, Ban, Clear, Automod)</li>
+        <li>🎫 Ticketsystem mit Buttons & Panels</li>
+        <li>🔊 Voice Control Panels (Name, Limit, Lock, Claim, Transfer)</li>
+        <li>🎉 Giveaways & Events</li>
+        <li>👋 Welcome Messages & Auto-Roles</li>
+        <li>🧠 Advanced Logging & Anti-Raid</li>
       </ul>
     </section>
 
     <section>
-      <h2>Schnell starten</h2>
-      <p>Diese Seite wird direkt vom Repository <code>jxstin1908.github.io</code> ausgeliefert. Änderungen pushst du mit Git oder legst Dateien über GitHub an.</p>
+      <h2>⌨️ Slash-Commands</h2>
+      <pre><code>
+/kick
+/ban
+/clear
+/create-ticket
+/create-voice-panel
+/giveaway
+/autorole
+/welcome
+      </code></pre>
+      <p>
+        OctavianBot wird ausschließlich über moderne
+        <strong>Slash-Commands (/)</strong> gesteuert.
+      </p>
+    </section>
+
+    <section>
+      <h2>🧩 Warum OctavianBot?</h2>
+      <ul>
+        <li>⚡ Schnelle & einfache Einrichtung</li>
+        <li>🔐 Sicher & serverfreundlich</li>
+        <li>🧱 Modular aufgebaut & erweiterbar</li>
+        <li>💼 Ideal für Community- & Business-Server</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>🛣️ Roadmap</h2>
+      <ul>
+        <li>✅ Core-Bot Funktionen</li>
+        <li>🟡 Web-Dashboard (OAuth2)</li>
+        <li>🟡 Live-Konfiguration in Echtzeit</li>
+        <li>🟡 Premium-Features & Lizenzen</li>
+      </ul>
+      <p><em>Ein Web-Dashboard befindet sich aktuell in Entwicklung.</em></p>
     </section>
 
     <footer>
       <p>OctavianBot • Erstellt von jxstin1908</p>
     </footer>
+
   </main>
-<script src="app.js"></script>
 </body>
 </html>
